@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&display=swap');
+:root{
+     --black:#0F0F0F;
+     --dard-blue:#232D3F;
+     --green:#005B41;
+     --light-green:#008170;
+}
+*{
+     margin:0;
+     padding:0px;
+     box-sizing:border-box;
+     font-family: 'Poppins', sans-serif;
+}
+.header-content{
+     background: linear-gradient(rgba(0, 128, 0, 0.625),rgba(0, 0, 0, 0.716)),url(./images1.jpg);
+     height:100vh;
+     width:100%;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     color:whitesmoke;
+     text-align:center;
+     padding-top:250px;
+    
+     
+}
+
+.fa-cart-shopping{
+     margin:0px 10px;
+}
+nav{
+     display:flex;
+     align-items:center;
+     justify-content:space-around;
+     width:100%;
+     flex-wrap: wrap;
+     /* background-color: rgba(10, 203, 39, 0.646); */
+     color:whitesmoke;
+     position: absolute;
+   
+}
+
+.nav-header h1{
+    /* color: var(--dard-blue); */
+    cursor:pointer;
+    margin:10px 0px;
+}
+ul{
+     list-style-type:none;
+     display:inline-flex;
+     margin:10px 0px;
+     /* background-color: yellow; */
+}
+
+ul li a{
+     text-decoration: none;
+     color:whitesmoke;
+     margin:0px 30px;
+     font-size:20px;
+}
+
+
+/* This is only for the hover effect of the element */
+.fa-solid:hover{
+     color:var(--light-green);
+     
+}
+
+ul li a:hover{
+     transition:.2s;
+     color:var(--black);
+     text-decoration:underline;
+     border-radius:5px;
+}
+button:hover{
+     box-shadow: 0 0 4px 2px white;
+}
+
+
+/* -------------end of the hover------------------ */
+body{
+    
+     background-color:rgba(142, 141, 141, 0.123);
+     
+     
+     overflow-x:hidden;
+ 
+
+}
+.fa-bars{
+     
+     position:absolute;
+     right:-50px;
+}
+
+span{
+     color:red;
+}
+button{
+     width:80px;
+     height:50px;
+     margin:50px 20px;
+     font-size:20px;
+     font-weight: bolder;
+     border-radius:3px;
+     background:linear-gradient(rgba(0, 128, 0, 0.625),rgba(0, 0, 0, 0.716));
+     color:whitesmoke;
+     border:none;
+     cursor:pointer;
+}
+
+
+
+/* This is for the media queries */
+@media(max-width:780px){
+    nav{
+       flex-direction:column;
+       width:100%;
+       background:linear-gradient(to top right,rgba(0, 0, 0, 0.253),rgba(0, 0, 0, 0.934));
+       border-bottom-right-radius:100px;
+     }
+    .nav-header{
+       align-self:flex-start;
+    }
+    ul li a{
+     color:red;
+    }
+    ul{
+     display:block;
+     height:70vh;
+     margin:60px;
+     text-align:center;
+     justify-self:center;
+     display:none;
+
+     
+    }
+    ul li{
+        margin:80px 0px;
+    }
+     
+     .fa-bars{
+          top:20px;
+          right:20px;
+     }
+     .result{
+          display:block;
+     }
+   
+}
+/* ----end of the media queries */
+
+/* section for the about */
+.about{
+     width:80%;
+     margin:50px auto;
+     text-align:center;
+}
+.panel{
+     display:flex;
+     height:400px;
+     gap:20px;
+     margin:15px;
+}
+.leftpanel{
+     width:35%;
+     height:100%; 
+     background-color: yellow;
+}
+.leftpanel img{
+     width:100%;
+     height:100%;
+}
+
+
+.rightpanel{
+     height:100%;
+     width:63%;
+     background-color: yellow;
+     position: relative;
+
+}
+.rightpanel img{
+     width:100%;
+     height:100%;
+}
+img:hover{
+     box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.297);
+}
+.fa-arrow-left,.fa-arrow-right{
+     position:absolute;
+     top:200px;
+}
+.fa-arrow-left{
+     left:1px;
+     border:1px solid black;
+     color:white;
+     background-color: black;
+     border-radius: 50%;
+}
+.fa-arrow-right{
+     right:1px;
+     border:1px solid black;
+     color:white;
+     background-color: black;
+     border-radius: 50%;
+}
+.loginform{
+     min-height:80vh;
+     width:100%;
+     background:linear-gradient(rgba(0, 128, 0, 0.625),rgba(0, 0, 0, 0.716)),url(./image8.jpg);
+     display:flex;
+     margin:10px 5px;
+     flex-wrap: wrap;
+     justify-content:space-around;
+     align-items: center;
+}
+
+
+@media(max-width:1030px){
+     .panel{
+          flex-direction: column;
+     }
+     .leftpanel,.rightpanel{
+          width:100%;
+     }
+     .loginform{
+          margin-top:500px;
+     }
+     .form{
+          margin-bottom:10px;
+     }
+}
+
+.content{
+     display:flex;
+     width:500px;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     margin-left:40px;
+     text-align: justify;
+     margin-top:50px;
+     padding:20px;
+     color:whitesmoke;
+     
+}
+.form{
+     width:400px;
+     height:400px;
+     background:linear-gradient(rgba(0, 128, 0, 0.625),rgba(0, 0, 0, 0.716));
+     /* margin-bottom:100px; */
+     /* margin-right:50px; */
+     text-align: center;
+     margin:auto;
+    
+}
+
+@media(max-width:600px)
+{
+     .loginform{
+          margin-top:300px;
+     }
+     .form{
+          margin-bottom:20px;
+     }
+}
+
+.form h1{
+     margin-bottom:30px;
+}
+input{
+     
+     margin:10px 10px;
+     width:80%;
+     padding:10px;
+     border:1px solid white;
+}
+input:hover{
+     background-color: pink;
+}
+.submit{
+    text-align:center;
+    margin-top:25px;
+    color:white;
+    background-color: var(--dard-blue);
+    border-radius:10px;
+    outline:none;
+}
+
+.gradient_details{
+     width:100%;
+     margin:40px auto;
+     display:flex;
+     justify-content:center;
+     flex-wrap:wrap;
+     align-items: center;
+}
+.row{
+     background-color: whitesmoke;
+     z-index: -1;
+     margin:10px;
+     width:400px;
+     position:relative;   
+     height:70vh;  
+}
+/* .column{
+     height:400px;
+     margin:20px;
+} */
+.column1{
+     background:linear-gradient(rgba(0, 128, 0, 0.625),rgba(0, 0, 0, 0.716)),url(./veg1.jpg);
+     background-position: center;
+     background-size: contain;
+}
+.column2{
+     background:linear-gradient(rgba(0, 128, 0, 0.625),rgba(0, 0, 0, 0.716)),url(./veg2.jpg);
+     background-position: center;
+     background-size:contain;
+
+}
+
+.column3{
+     background:linear-gradient(rgba(0, 128, 0, 0.625),rgba(0, 0, 0, 0.716)),url(./veg3.jpg);
+     background-position: center;
+     background-size:contain;
+
+}
+.container{
+     position:absolute;
+     width:100%;
+     height:100%;
+     transform-style:preserve-3d;
+     transition:all 0.5s ease;
+}
+.container:hover{
+     transform:rotateY(180deg);
+}
+.column{
+     position:absolute;
+     width:100%;
+     height:100%;
+     backface-visibility:hidden;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+}
+.backface{
+     position:absolute;
+     width:100%;
+     height:100%;
+     backface-visibility:hidden;
+     transform:rotateY(180deg);
+     display:flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+
+
+
+  
+
+
